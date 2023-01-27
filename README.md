@@ -4,7 +4,7 @@
 
 - 💬 Ask me about: **Full Stack Development, Tech-related and any interesting stuff**
 
-- 📫 Chat me with: **Discord** or **Instagram** or **WeChat** `my wechat: echo -n 'ZmVuZ3l1eGlhbmc5OQ==' | base64 -d`
+- 📫 Chat me with: **Discord** or **Instagram** or **WeChat** `wechat ID: echo -n 'ZmVuZ3l1eGlhbmc5OQ==' | base64 -d`
 
 - ⚡ Fun fact: **I love dogs and PlayStation Games**
 
