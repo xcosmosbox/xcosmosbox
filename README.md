@@ -6,7 +6,7 @@
 
 - 📫 Chat me with: **Discord** or **Instagram** or **WeChat** `wechat ID: echo -n 'ZmVuZ3l1eGlhbmc5OQ==' | base64 -d`
 
-- ⚡ Fun fact: **I love dogs and PlayStation Games**
+- ⚡ Fun fact: **I love dogs and PlayStation Games** `PSN ID: SanCheck0`
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
