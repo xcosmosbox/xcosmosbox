@@ -24,3 +24,4 @@
 
 ### I love to make a friend, so feel free to chat with me！🎉
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=xcosmosbox.xcosmosbox&left_color=green&right_color=red)
