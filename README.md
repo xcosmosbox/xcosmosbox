@@ -7,9 +7,9 @@
 
 - ⚡ Fun fact: **I love dogs and PlayStation Games** `PSN ID: SanCheck0`
 
-<h3 align="left">Connect with me:</h3>
-
+### Connect with me:
 <div align="left">
+  <img src="https://komarev.com/ghpvc/?username=xcosmosbox&color=0ddfff&style=for-the-badge&label=PROFILE+VIEWS" height="35" />
   <a href="https://www.instagram.com/ottovon_sancheck/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
   </a>
@@ -62,8 +62,6 @@
 
 ### I love to make a friend, so feel free to chat with me！🎉
 
-<div align="left">
-  <img src="https://profile-counter.glitch.me/xcosmosbox/count.svg?"  />
-</div>
+
 
 ###
