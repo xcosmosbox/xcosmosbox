@@ -1,6 +1,13 @@
-<h2 align="left">Hello World! 👋</h2>
+# Hello World 👋
+- 🌱 I’m currently learning:  **Computer Science**
 
-###
+- 💬 Ask me about: **Full Stack Development, Tech-related and any interesting stuff**
+
+- 📫 Chat me with: **Discord** or **Instagram**
+
+- ⚡ Fun fact: **I love dogs and PlayStation Games** `PSN ID: SanCheck0`
+
+<h3 align="left">Connect with me:</h3>
 
 <div align="left">
   <a href="https://www.instagram.com/ottovon_sancheck/" target="_blank">
@@ -12,7 +19,7 @@
   </a>
 </div>
 
-###
+<h3 align="left">Languages and Tools:</h3>
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
@@ -48,14 +55,14 @@
 
 ###
 
-<div align="center">
+<div align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=xcosmosbox&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=default&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=xcosmosbox&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=false&order=2" height="150" alt="languages graph"  />
 </div>
 
-###
+### I love to make a friend, so feel free to chat with me！🎉
 
-<div align="center">
+<div align="left">
   <img src="https://profile-counter.glitch.me/xcosmosbox/count.svg?"  />
 </div>
 
