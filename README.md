@@ -3,8 +3,6 @@
 
 - 💬 Ask me about: **Full Stack Development, Tech-related and any interesting stuff**
 
-- 📫 Chat me with: **Discord** or **Instagram**
-
 - ⚡ Fun fact: **I love dogs and PlayStation Games** `PSN ID: SanCheck0`
 
 ### Connect with me:
