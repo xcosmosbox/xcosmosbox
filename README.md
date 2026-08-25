@@ -5,7 +5,6 @@
 
 - ⚡ Fun fact: **I love dogs and PlayStation Games** `PSN ID: SanCheck0`
 
-### Connect with me:
 <div align="left">
   <img src="https://komarev.com/ghpvc/?username=xcosmosbox&color=0ddfff&style=for-the-badge&label=PROFILE+VIEWS" height="35" />
 </div>
@@ -46,12 +45,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="30" alt="firebase logo"  />
 </div>
 
-###
-
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=xcosmosbox&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=default&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=xcosmosbox&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=default&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
 
 ### I love to make a friend, so feel free to chat with me！🎉
 
