@@ -55,8 +55,28 @@ def build(card, theme, lang):
 </svg>'''
 
 
+def build_compact(card, theme, lang):
+    """Keep project names readable when two columns share a phone screen."""
+    slug, name, label, icon, zh, zh_sub, en, en_sub = card
+    p = THEMES[theme]
+    if lang == "en" and slug == "party":
+        name = "Say hello"
+    topic = zh_sub if lang == "zh" else en_sub.split(" · ")[0]
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="160" viewBox="0 0 360 160" role="img" aria-labelledby="title">
+<title id="title">{escape(name)} — {escape(topic)}</title>
+<rect x=".5" y=".5" width="359" height="151" rx="12" fill="{p['bg']}" stroke="{p['border']}"/>
+<path d="M1 26V13A12 12 0 0 1 13 1h22" fill="none" stroke="{p['accent']}" stroke-width="3"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<text x="22" y="55" font-size="29" font-weight="650" fill="{p['ink']}">{escape(name)}</text>
+<text x="22" y="102" font-size="23" fill="{p['sub']}">{escape(topic)}</text>
+</g>
+<path d="M319 130h17m-6-6 6 6-6 6" fill="none" stroke="{p['accent']}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>'''
+
+
 for card in CARDS:
     for theme in THEMES:
         for lang in ("zh", "en"):
             (ASSETS / f"{card[0]}-{lang}-{theme}.svg").write_text(build(card, theme, lang) + "\n", encoding="utf-8")
-print("Built 24 compact cards: 6 destinations × 2 languages × 2 themes.")
+            (ASSETS / f"{card[0]}-{lang}-{theme}-compact.svg").write_text(build_compact(card, theme, lang) + "\n", encoding="utf-8")
+print("Built desktop and narrow-screen cards: 6 destinations × 2 languages × 2 themes.")
