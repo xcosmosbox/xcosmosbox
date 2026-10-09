@@ -13,7 +13,7 @@ CARDS = [
     ("codex-manager", "Codex-Manager", "TOOLS", "terminal", "给模型请求安排个好管家。", "账号管理 · 请求路由", "A little order for your model requests.", "Account management · Request routing"),
     ("knowhere", "Knowhere", "KNOWLEDGE", "book", "把文档拆开，给知识找个家。", "文档解析 · 知识提取", "Give the knowledge in your docs a home.", "Document parsing · Knowledge extraction"),
     ("cairn", "Cairn", "GRAPHRAG", "graph", "给 Agent 一张知识地图。", "图谱检索 · 版本化知识", "A knowledge map for your Agent.", "Graph retrieval · Versioned knowledge"),
-    ("party", "邀请一位新队友", "CO-OP", "chat", "带个脑洞来，或者就打个招呼。", "聊个想法 · 留个脚印", "Bring an idea, or simply say hello.", "Swap ideas · Leave a little note"),
+    ("party", "邀请一位调查员", "CO-OP", "chat", "带上你的线索，一起喝杯茶。", "邮件密函 · 微信接头", "Bring a clue. Stay for a cup of tea.", "Sealed letters · WeChat rendezvous"),
 ]
 
 THEMES = {
@@ -35,12 +35,12 @@ def build(card, theme, lang):
     slug, name, label, icon, zh, zh_sub, en, en_sub = card
     p = THEMES[theme]
     if lang == "en" and slug == "party":
-        name = "Find a new party member"
+        name = "Invite an investigator"
     desc, sub = (zh, zh_sub) if lang == "zh" else (en, en_sub)
     title = f"{name} — {desc} {sub}"
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="88" viewBox="0 0 360 88" role="img" aria-labelledby="title desc">
 <title id="title">{escape(title)}</title>
-<desc id="desc">{escape('打开项目' if slug != 'party' else '打开留言入口')}</desc>
+<desc id="desc">{escape('打开项目' if slug != 'party' else '前往调查员联络入口')}</desc>
 <rect x=".5" y=".5" width="359" height="81" rx="9" fill="{p['bg']}" stroke="{p['border']}"/>
 <path d="M1 23V10a9 9 0 0 1 9-9h16" fill="none" stroke="{p['accent']}" stroke-width="2"/>
 <rect x="13" y="17" width="40" height="44" rx="8" fill="{p['tile']}"/>
@@ -60,8 +60,10 @@ def build_compact(card, theme, lang):
     slug, name, label, icon, zh, zh_sub, en, en_sub = card
     p = THEMES[theme]
     if lang == "en" and slug == "party":
-        name = "Say hello"
+        name = "Join the party"
     topic = zh_sub if lang == "zh" else en_sub.split(" · ")[0]
+    if lang == "en" and slug == "party":
+        topic = "Email · WeChat"
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="160" viewBox="0 0 360 160" role="img" aria-labelledby="title">
 <title id="title">{escape(name)} — {escape(topic)}</title>
 <rect x=".5" y=".5" width="359" height="151" rx="12" fill="{p['bg']}" stroke="{p['border']}"/>
