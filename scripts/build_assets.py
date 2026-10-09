@@ -16,12 +16,9 @@ CARDS = [
     ("party", "邀请一位新队友", "CO-OP", "chat", "带个脑洞来，或者就打个招呼。", "聊个想法 · 留个脚印", "Bring an idea, or simply say hello.", "Swap ideas · Leave a little note"),
 ]
 
-# The illustrated board remains a night scene in either GitHub theme.
-# Full-bleed tile backgrounds make adjacent images one surface, while each
-# project remains a separate ordinary GitHub link.
 THEMES = {
-    "light": dict(canvas="#0b1730", bg="#10233e", border="#2b4562", ink="#ecf2fa", sub="#b7cbdc", dim="#94b0c5", accent="#72d9cc", tile="#16394b", gold="#efc474"),
-    "dark": dict(canvas="#0b1730", bg="#10233e", border="#34536f", ink="#ecf2fa", sub="#b7cbdc", dim="#94b0c5", accent="#80e0d2", tile="#16394b", gold="#efc474"),
+    "light": dict(bg="#fafbf9", border="#dce3df", ink="#283633", sub="#52645e", dim="#67776f", accent="#21826a", tile="#eaf2ed", gold="#9a711e"),
+    "dark": dict(bg="#161e22", border="#34423e", ink="#e4eee7", sub="#bacbc2", dim="#93a99d", accent="#8ed6b5", tile="#253a31", gold="#dfc17e"),
 }
 
 ICONS = {
@@ -44,38 +41,17 @@ def build(card, theme, lang):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="88" viewBox="0 0 360 88" role="img" aria-labelledby="title desc">
 <title id="title">{escape(title)}</title>
 <desc id="desc">{escape('打开项目' if slug != 'party' else '打开留言入口')}</desc>
-<rect width="360" height="88" fill="{p['canvas']}"/>
-<path d="M8 4h338l6 6v65l-6 6H8z" fill="{p['bg']}" stroke="{p['border']}"/>
-<path d="M8 22V4h23" fill="none" stroke="{p['accent']}" stroke-width="1.5"/>
-<path d="M332 81h14l6-6" fill="none" stroke="{p['gold']}" stroke-opacity=".55"/>
-<rect x="15" y="19" width="38" height="42" rx="5" fill="{p['tile']}"/>
+<rect x=".5" y=".5" width="359" height="81" rx="9" fill="{p['bg']}" stroke="{p['border']}"/>
+<path d="M1 23V10a9 9 0 0 1 9-9h16" fill="none" stroke="{p['accent']}" stroke-width="2"/>
+<rect x="13" y="17" width="40" height="44" rx="8" fill="{p['tile']}"/>
 <g transform="translate(20 26)" fill="none" stroke="{p['accent']}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
-<text x="65" y="27" font-size="15.5" font-weight="650" fill="{p['ink']}">{escape(name)}</text>
-<text x="337" y="26" text-anchor="end" font-size="9" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" letter-spacing=".5" fill="{p['gold']}">{label}</text>
-<text x="65" y="48" font-size="13" fill="{p['sub']}">{escape(desc)}</text>
-<text x="65" y="68" font-size="11" fill="{p['dim']}">{escape(sub)}</text>
+<text x="65" y="25" font-size="15.5" font-weight="650" fill="{p['ink']}">{escape(name)}</text>
+<text x="339" y="24" text-anchor="end" font-size="10" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" letter-spacing=".5" fill="{p['gold']}">{label}</text>
+<text x="65" y="46" font-size="13" fill="{p['sub']}">{escape(desc)}</text>
+<text x="65" y="66" font-size="11" fill="{p['dim']}">{escape(sub)}</text>
 </g>
-<path d="M329 65h8m-3-3 3 3-3 3" fill="none" stroke="{p['accent']}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>'''
-
-
-def build_intro(lang):
-    name = "San_Check 的存档点" if lang == "zh" else "San_Check’s save point"
-    desc = "写点 Agent，连点知识，偶尔跟 bug 对线。" if lang == "zh" else "Agents, knowledge, and the occasional bug."
-    prompt = "挑个副本，随便逛逛" if lang == "zh" else "Pick a quest. Have a look around."
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="101" viewBox="0 0 360 101" role="img" aria-labelledby="title desc">
-<title id="title">{escape(name)}</title><desc id="desc">{escape(desc)} GraphRAG · Agent · RL. {escape(prompt)}</desc>
-<rect width="360" height="101" fill="#0b1730"/>
-<path d="M0 0h360" stroke="#234360"/>
-<rect x="16" y="18" width="3" height="17" fill="#72d9cc"/>
-<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
-<text x="28" y="32" font-size="19" font-weight="650" fill="#ecf2fa">{escape(name)}</text>
-<text x="17" y="54" font-size="13" fill="#b7cbdc">{escape(desc)}</text>
-<text x="17" y="75" font-size="11" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" fill="#efc474">GraphRAG  /  Agent  /  RL</text>
-<text x="17" y="93" font-size="10" fill="#72d9cc">$ ls ~/playground</text>
-<text x="128" y="93" font-size="10" fill="#94b0c5">{escape(prompt)}</text>
-</g>
+<path d="M331 63h8m-3-3 3 3-3 3" fill="none" stroke="{p['accent']}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>'''
 
 
@@ -83,6 +59,4 @@ for card in CARDS:
     for theme in THEMES:
         for lang in ("zh", "en"):
             (ASSETS / f"{card[0]}-{lang}-{theme}.svg").write_text(build(card, theme, lang) + "\n", encoding="utf-8")
-for lang in ("zh", "en"):
-    (ASSETS / f"savepoint-{lang}.svg").write_text(build_intro(lang) + "\n", encoding="utf-8")
-print("Built 24 project cards and 2 intro panels on one coherent night-scene canvas.")
+print("Built 24 compact cards: 6 destinations × 2 languages × 2 themes.")

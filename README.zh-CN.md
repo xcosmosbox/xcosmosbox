@@ -1,6 +1,22 @@
-<p align="center"><picture><img src="assets/savepoint-zh.svg" align="top" width="400" alt="San_Check 的存档点。写点 Agent，连点知识，偶尔跟 bug 对线。GraphRAG / Agent / RL。"></picture><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/quantum-pier-still.png"><img align="top" width="400" src="assets/quantum-pier.gif" alt="像素调查员在霓虹渔村遇见量子古神：先 Debug，再一起饮茶。"></picture><a href="https://github.com/redai-studio/Relax"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/relax-zh-dark.svg"><img src="assets/relax-zh-light.svg" align="top" width="400" alt="Relax — 强化学习 · 训练引擎"></picture></a><a href="https://github.com/HKUDS/nanobot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/nanobot-zh-dark.svg"><img src="assets/nanobot-zh-light.svg" align="top" width="400" alt="nanobot — 工具调用 · 长期记忆"></picture></a><a href="https://github.com/qxcnm/Codex-Manager"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/codex-manager-zh-dark.svg"><img src="assets/codex-manager-zh-light.svg" align="top" width="400" alt="Codex-Manager — 账号管理 · 请求路由"></picture></a><a href="https://github.com/Ontos-AI/knowhere"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/knowhere-zh-dark.svg"><img src="assets/knowhere-zh-light.svg" align="top" width="400" alt="Knowhere — 文档解析 · 知识提取"></picture></a><a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cairn-zh-dark.svg"><img src="assets/cairn-zh-light.svg" align="top" width="400" alt="Cairn — 图谱检索 · 版本化知识"></picture></a><a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/party-zh-dark.svg"><img src="assets/party-zh-light.svg" align="top" width="400" alt="邀请一位新队友 — 聊个想法 · 留个脚印"></picture></a></p>
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/quantum-pier-still.png"><img align="right" width="360" height="101" src="assets/quantum-pier.gif" alt="像素调查员在霓虹渔村遇见量子古神：先 Debug，再一起饮茶。"></picture>
 
-代码慢慢写，朋友慢慢交。[来串个门](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml)，peace & love ✌️ · 饮茶先啦 🍵 · [English ↗](README.en.md)
+### >_ San_Check 的存档点
+
+写点 Agent，连点知识，偶尔跟 bug 对线。<br>
+`GraphRAG` `Agent` `RL` · [English ↗](README.en.md)
+
+**`$ ls ~/playground`**　挑个副本，随便逛逛 ↓
+
+<p>
+  <a href="https://github.com/redai-studio/Relax"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/relax-zh-dark.svg"><img src="assets/relax-zh-light.svg" width="360" height="88" alt="Relax — 强化学习 · 训练引擎"></picture></a>
+  <a href="https://github.com/HKUDS/nanobot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/nanobot-zh-dark.svg"><img src="assets/nanobot-zh-light.svg" width="360" height="88" alt="nanobot — 工具调用 · 长期记忆"></picture></a>
+  <a href="https://github.com/qxcnm/Codex-Manager"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/codex-manager-zh-dark.svg"><img src="assets/codex-manager-zh-light.svg" width="360" height="88" alt="Codex-Manager — 账号管理 · 请求路由"></picture></a>
+  <a href="https://github.com/Ontos-AI/knowhere"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/knowhere-zh-dark.svg"><img src="assets/knowhere-zh-light.svg" width="360" height="88" alt="Knowhere — 文档解析 · 知识提取"></picture></a>
+  <a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cairn-zh-dark.svg"><img src="assets/cairn-zh-light.svg" width="360" height="88" alt="Cairn — 图谱检索 · 版本化知识"></picture></a>
+  <a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/party-zh-dark.svg"><img src="assets/party-zh-light.svg" width="360" height="88" alt="邀请一位新队友 — 聊个想法 · 留个脚印"></picture></a>
+</p>
+
+代码慢慢写，朋友慢慢交。[来串个门](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml)，peace & love ✌️ · 饮茶先啦 🍵
 
 <details>
 <summary>🎲 侦查检定：README 背面好像有张纸条……</summary>
