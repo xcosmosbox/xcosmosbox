@@ -2,8 +2,12 @@
 
 ### >_ San_Check’s save point
 
-Building Agents, connecting knowledge, occasionally duelling bugs.<br>
-`GraphRAG` `Agent` `RL` · [简体中文 ↗](README.md)
+Building Agents, connecting knowledge, helping models level up.<br>
+Occasionally duelling bugs. Low on SAN? Time for tea. · [简体中文 ↗](README.md)
+
+<p>
+<a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/skill-graphrag-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/skill-graphrag-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/skill-graphrag-en-dark.svg"><img src="assets/skill-graphrag-en-light.svg" width="32%" alt="GraphRAG · Connect clues — Turn scattered clues into a map."></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/HKUDS/nanobot"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/skill-agent-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/skill-agent-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/skill-agent-en-dark.svg"><img src="assets/skill-agent-en-light.svg" width="32%" alt="Agent · Call the party — Tools ready. Memories packed."></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/redai-studio/Relax"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/skill-rl-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/skill-rl-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/skill-rl-en-dark.svg"><img src="assets/skill-rl-en-light.svg" width="32%" alt="RL · Try. Learn. Repeat. — One more try. Experience +1."></picture></a>
+</p>
 
 **`$ ls ~/playground`**　Pick a quest. Have a look around ↓
 

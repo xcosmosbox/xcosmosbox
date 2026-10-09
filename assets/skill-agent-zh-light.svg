@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="82" viewBox="0 0 280 82" role="img" aria-labelledby="title">
+<title id="title">Agent · 召唤队友 — 工具在手，记忆随身</title>
+<rect x=".5" y=".5" width="279" height="76" rx="8" fill="#fafbf9" stroke="#dce3df"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','Microsoft YaHei',sans-serif"><rect x="13" y="16" width="32" height="34" rx="6" fill="#ebf1f8"/>
+<g transform="translate(17 20) scale(.9)" color="#386f9c" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"><path d="M5 7h16v15H5zM9 12h1m6 0h1M9 17h8M13 2v5M1 12h4m16 0h4"/><path d="M11 1h4v3h-4" fill="currentColor" stroke="none"/></g>
+<text x="55" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="22" font-weight="700" fill="#386f9c">Agent</text>
+<text x="264" y="31" text-anchor="end" font-size="11.5" font-weight="600" fill="#52645e">召唤队友</text>
+<text x="55" y="59" font-size="12.5" fill="#283633">工具在手，记忆随身</text>
+<path d="M254 61l9-9m-7 0h7v7" fill="none" stroke="#386f9c" stroke-width="1.4"/>
+<path d="M1 19V9a8 8 0 0 1 8-8h12" fill="none" stroke="#386f9c" stroke-width="2"/></g>
+</svg>

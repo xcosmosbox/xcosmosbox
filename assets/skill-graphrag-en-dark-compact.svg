@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="142" viewBox="0 0 240 142" role="img" aria-labelledby="title">
+<title id="title">GraphRAG · Connect clues — Turn scattered clues into a map.</title>
+<rect x=".5" y=".5" width="239" height="136" rx="8" fill="#161e22" stroke="#34423e"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC','Microsoft YaHei',sans-serif"><path d="M14 16h16m-16 0v16M210 116h16m0-16v16" fill="none" stroke="#8ed6b5" stroke-width="3"/>
+<text x="120" y="49" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="33" font-weight="700" fill="#8ed6b5">GraphRAG</text>
+<text x="120" y="84" text-anchor="middle" font-size="19" font-weight="600" fill="#e4eee7">Connect clues</text>
+<text x="120" y="115" text-anchor="middle" font-size="17" fill="#bacbc2">Graph · Retrieval</text></g>
+</svg>

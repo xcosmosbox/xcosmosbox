@@ -2,8 +2,12 @@
 
 ### >_ San_Check 的存档点
 
-写点 Agent，连点知识，偶尔跟 bug 对线。<br>
-`GraphRAG` `Agent` `RL` · [English ↗](README.en.md)
+写点 Agent，连点知识，让模型练练级。<br>
+偶尔跟 bug 对线，理智不足就饮茶。 · [English ↗](README.en.md)
+
+<p>
+<a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/skill-graphrag-zh-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/skill-graphrag-zh-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/skill-graphrag-zh-dark.svg"><img src="assets/skill-graphrag-zh-light.svg" width="32%" alt="GraphRAG · 侦查线索 — 把知识碎片连成图"></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/HKUDS/nanobot"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/skill-agent-zh-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/skill-agent-zh-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/skill-agent-zh-dark.svg"><img src="assets/skill-agent-zh-light.svg" width="32%" alt="Agent · 召唤队友 — 工具在手，记忆随身"></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/redai-studio/Relax"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/skill-rl-zh-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/skill-rl-zh-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/skill-rl-zh-dark.svg"><img src="assets/skill-rl-zh-light.svg" width="32%" alt="RL · 试错升级 — 再试一把，经验 +1"></picture></a>
+</p>
 
 **`$ ls ~/playground`**　挑个副本，随便逛逛 ↓
 
