@@ -8,30 +8,12 @@ Building Agents, connecting knowledge, occasionally duelling bugs.<br>
 **`$ ls ~/playground`**　Pick a quest. Have a look around ↓
 
 <p>
-  <a href="https://github.com/redai-studio/Relax"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/relax-en-dark.svg">
-    <img src="assets/relax-en-light.svg" width="360" height="88" alt="Relax — Reinforcement learning · Training engine">
-  </picture></a>
-  <a href="https://github.com/HKUDS/nanobot"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/nanobot-en-dark.svg">
-    <img src="assets/nanobot-en-light.svg" width="360" height="88" alt="nanobot — Tool use · Long-term memory">
-  </picture></a>
-  <a href="https://github.com/qxcnm/Codex-Manager"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/codex-manager-en-dark.svg">
-    <img src="assets/codex-manager-en-light.svg" width="360" height="88" alt="Codex-Manager — Account management · Request routing">
-  </picture></a>
-  <a href="https://github.com/Ontos-AI/knowhere"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/knowhere-en-dark.svg">
-    <img src="assets/knowhere-en-light.svg" width="360" height="88" alt="Knowhere — Document parsing · Knowledge extraction">
-  </picture></a>
-  <a href="https://github.com/xcosmosbox/Cairn"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/cairn-en-dark.svg">
-    <img src="assets/cairn-en-light.svg" width="360" height="88" alt="Cairn — Graph retrieval · Versioned knowledge">
-  </picture></a>
-  <a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/party-en-dark.svg">
-    <img src="assets/party-en-light.svg" width="360" height="88" alt="Find a new party member — Swap ideas · Leave a little note">
-  </picture></a>
+  <a href="https://github.com/redai-studio/Relax"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/relax-en-dark.svg"><img src="assets/relax-en-light.svg" width="360" height="88" alt="Relax — Reinforcement learning · Training engine"></picture></a>
+  <a href="https://github.com/HKUDS/nanobot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/nanobot-en-dark.svg"><img src="assets/nanobot-en-light.svg" width="360" height="88" alt="nanobot — Tool use · Long-term memory"></picture></a>
+  <a href="https://github.com/qxcnm/Codex-Manager"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/codex-manager-en-dark.svg"><img src="assets/codex-manager-en-light.svg" width="360" height="88" alt="Codex-Manager — Account management · Request routing"></picture></a>
+  <a href="https://github.com/Ontos-AI/knowhere"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/knowhere-en-dark.svg"><img src="assets/knowhere-en-light.svg" width="360" height="88" alt="Knowhere — Document parsing · Knowledge extraction"></picture></a>
+  <a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cairn-en-dark.svg"><img src="assets/cairn-en-light.svg" width="360" height="88" alt="Cairn — Graph retrieval · Versioned knowledge"></picture></a>
+  <a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/party-en-dark.svg"><img src="assets/party-en-light.svg" width="360" height="88" alt="Find a new party member — Swap ideas · Leave a little note"></picture></a>
 </p>
 
 Code at your own pace. Make a friend along the way. [Drop by](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml) — peace & love ✌️
