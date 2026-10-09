@@ -1,27 +1,16 @@
-name: Let's build / 交流与合作
-description: Start a conversation about a project, collaboration, or engineering opportunity.
-title: "Hello: "
+name: 打个招呼 / Say hi
+description: 代码、脑洞或者一句 hello，欢迎串门。
+title: "Hello 👋 "
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reaching out! English and 中文 are both welcome.
-        This is a public conversation; share only details you want visible here.
-  - type: dropdown
-    id: topic
-    attributes:
-      label: What brings you here? / 想聊什么？
-      options:
-        - Open-source collaboration / 开源合作
-        - Engineering opportunity / 工作机会
-        - Project discussion / 项目交流
-    validations:
-      required: true
+        欢迎串门！中文 / English 都可以。
+        这里是公开留言区，私人联系方式就别往里面放啦。
   - type: textarea
-    id: conversation
+    id: hello
     attributes:
-      label: Tell me a little more / 展开聊聊
-      description: What are you working on, and how could we work together?
-      placeholder: A short introduction, your idea, and any relevant public links.
+      label: 想聊点什么？ / What's on your mind?
+      placeholder: 一个脑洞、一个项目，或者随便聊聊。
     validations:
       required: true

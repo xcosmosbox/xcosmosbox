@@ -1,103 +1,48 @@
 #!/usr/bin/env python3
-"""Regenerate the profile's original SVG artwork. Python standard library only."""
+"""Draw the profile's tiny pixel cat. Standard library only; no remote assets."""
 from pathlib import Path
-from html import escape
 
-ROOT = Path(__file__).resolve().parents[1]
-ASSETS = ROOT / "assets"
+ASSETS = Path(__file__).resolve().parents[1] / "assets"
 ASSETS.mkdir(exist_ok=True)
 
-PALETTES = {
-    "light": dict(bg="#f5f8fb", panel="#ffffff", ink="#10263b", muted="#506779",
-                  line="#d2dee8", accent="#007c70", soft="#e0f2ed", amber="#a05c15"),
-    "dark": dict(bg="#101d2c", panel="#17293a", ink="#edf6fa", muted="#b0c3d2",
-                 line="#344a5b", accent="#77e2c3", soft="#173e3b", amber="#efbb72"),
+THEMES = {
+    "light": {"fur":"#b4a2ef", "shade":"#8b78ca", "edge":"#393456", "ear":"#f3bddb", "screen":"#e3f5f0", "mint":"#167c6b", "shine":"#efe7ff"},
+    "dark": {"fur":"#c1b2f5", "shade":"#9783d8", "edge":"#302c47", "ear":"#fac9df", "screen":"#243c3a", "mint":"#91e4ce", "shine":"#f2ebff"},
 }
 
-def text(x, y, content, size=20, fill=None, weight=400, **attrs):
-    attrs = " ".join(f'{k.replace("_", "-")}="{v}"' for k, v in attrs.items())
-    return (f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}"'
-            f' fill="{fill or "currentColor"}" {attrs}>{escape(content)}</text>')
+def rect(x,y,w,h,c):
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c}"/>'
 
-def line(x1,y1,x2,y2,color,width=2,extra=""):
-    return f'<path d="M{x1} {y1} L{x2} {y2}" fill="none" stroke="{color}" stroke-width="{width}" {extra}/>'
+def draw(p):
+    b = ''
+    # Pixel ears, head, shoulders and a curled tail.
+    for a in [(25,15,12,22),(58,15,12,22),(21,29,53,29),(25,54,46,24),(67,62,12,8),(75,53,7,14)]:
+        b += rect(*a,p['edge'])
+    for a in [(29,19,4,13),(62,19,4,13),(25,33,45,21),(29,54,38,20),(70,63,9,4),(78,54,4,10)]:
+        b += rect(*a,p['fur'])
+    b += rect(29,27,4,7,p['ear']) + rect(62,27,4,7,p['ear'])
+    b += rect(25,50,45,4,p['shade']) + rect(34,57,24,13,p['shine'])
+    b += '<g class="eyes">' + rect(33,38,5,6,p['edge']) + rect(57,38,5,6,p['edge']) + '</g>'
+    b += rect(27,44,6,3,p['ear']) + rect(63,44,6,3,p['ear'])
+    b += '<path d="M44 45h3v3h4v-3h3" fill="none" stroke="'+p['edge']+'" stroke-width="2"/>'
+    # The terminal is an illustration, not a simulated status panel.
+    b += rect(18,62,52,24,p['edge']) + rect(22,66,44,15,p['screen'])
+    b += '<path d="m29 70 4 3-4 3" fill="none" stroke="'+p['mint']+'" stroke-width="2"/>'
+    b += rect(38,75,8,2,p['mint']) + rect(14,84,60,4,p['shade'])
+    b += '<g class="spark" fill="'+p['mint']+'"><path d="M80 23h3v4h4v3h-4v4h-3v-4h-4v-3h4z"/></g>'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+<title id="title">Pixel cat at a terminal</title>
+<desc id="desc">A small lavender cat with a mint terminal, blinking gently.</desc>
+<style>
+.eyes {{ transform-origin: 48px 41px; animation: blink 7s steps(1,end) infinite; }}
+.spark {{ animation: sparkle 5s ease-in-out infinite; }}
+@keyframes blink {{ 0%,94%,98%,100% {{ transform:scaleY(1); }} 95%,97% {{ transform:scaleY(.2); }} }}
+@keyframes sparkle {{ 0%,100% {{ opacity:.5; }} 50% {{ opacity:1; }} }}
+@media (prefers-reduced-motion:reduce) {{ .eyes,.spark {{ animation:none; }} }}
+</style>
+{b}
+</svg>'''
 
-def circle(x,y,r,color,stroke=None):
-    return f'<circle cx="{x}" cy="{y}" r="{r}" fill="{color}"'+(f' stroke="{stroke}" stroke-width="2"' if stroke else '')+'/>'
-
-def rect(x,y,w,h,r,fill,stroke=None):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{fill}"'+(f' stroke="{stroke}"' if stroke else '')+'/>'
-
-def wrap(h, title, desc, body, p):
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="{h}" viewBox="0 0 1000 {h}" role="img" aria-labelledby="title desc">
-<title id="title">{escape(title)}</title><desc id="desc">{escape(desc)}</desc>
-<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" fill="{p['ink']}">
-{rect(.5,.5,999,h-1,20,p['bg'],p['line'])}{body}
-</g></svg>'''
-
-def hero(p):
-    b = text(44,49,"SAN_CHECK  /  XCOSMOSBOX",16,p['muted'],600,letter_spacing="2")
-    b += text(41,124,"Knowledge into action.",49,p['ink'],700,letter_spacing="-1.5")
-    b += text(44,168,"Agent systems · GraphRAG · Infrastructure",22,p['muted'])
-    b += line(44,203,622,203,p['line'],1)
-    b += circle(50,239,5,p['accent']) + text(66,245,"BUILD",14,p['accent'],700,letter_spacing="1.5")
-    b += text(165,245,"SHIP",14,p['muted'],600,letter_spacing="1.5")
-    b += text(243,245,"EVALUATE",14,p['muted'],600,letter_spacing="1.5")
-    for x in range(684,957,28):
-        for y in range(35,262,28): b += circle(x,y,1,p['line'])
-    nodes=[(731,83),(875,58),(819,138),(939,160),(733,214),(884,237)]
-    for a,z in [(0,1),(0,2),(1,2),(1,3),(2,3),(2,4),(2,5),(3,5),(4,5)]:
-        b += line(*nodes[a],*nodes[z],p['line'],2)
-    for x,y in nodes:
-        b += circle(x,y,9,p['panel'],p['accent'])
-        b += circle(x,y,3,p['accent'])
-    b += circle(819,138,34,p['soft'],p['accent'])
-    b += text(798,146,"SC",22,p['accent'],700)
-    b += rect(859,208,109,39,10,p['panel'],p['line'])
-    b += text(878,233,"COMMIT",12,p['muted'],600,letter_spacing="1.5")
-    return wrap(286,"San_Check — Knowledge into action", "Agent systems, GraphRAG and infrastructure. A connected knowledge graph with an SC monogram.",b,p)
-
-def cairn(p):
-    b = rect(28,27,52,6,3,p['accent'])
-    b += text(29,62,"01 / KNOWLEDGE SYSTEMS",13,p['muted'],600,letter_spacing="1.6")
-    b += text(27,110,"Cairn",42,p['ink'],700,letter_spacing="-1")
-    b += text(29,145,"Versioned knowledge for agents.",21,p['muted'])
-    b += text(29,183,"BUILD  →  EVOLVE  →  SERVE",13,p['accent'],700,letter_spacing="1.3")
-    # A conceptual pipeline, not a product screenshot.
-    for x,label in [(533,"DOCS"),(714,"GRAPH"),(890,"MCP")]:
-        b += text(x,177,label,13,p['muted'],600,text_anchor="middle",letter_spacing="1")
-    b += line(568,99,652,99,p['line'],2) + line(779,99,854,99,p['line'],2)
-    b += text(610,104,"›",26,p['accent'],600) + text(816,104,"›",26,p['accent'],600)
-    for d in [(511,62),(504,68),(497,74)]:
-        b += rect(*d,59,66,7,p['panel'],p['line'])
-    for y,w in [(93,31),(103,24),(113,31)]: b += line(510,y,510+w,y,p['accent'],2)
-    ns=[(682,70),(747,77),(714,106),(680,129),(751,128)]
-    for i,j in [(0,1),(0,2),(1,2),(2,3),(2,4),(3,4)]: b+=line(*ns[i],*ns[j],p['line'],2)
-    for x,y in ns: b+=circle(x,y,7,p['soft'],p['accent'])
-    b += rect(862,68,58,69,12,p['soft'],p['accent'])
-    b += text(873,112,"<>_",19,p['accent'],700)
-    return wrap(214,"Cairn — Versioned knowledge for agents", "Conceptual pipeline: skill documents become a knowledge graph, delivered over MCP.",b,p)
-
-def campus(p):
-    b = rect(28,27,52,6,3,p['amber'])
-    b += text(29,62,"02 / PRODUCT ENGINEERING",13,p['muted'],600,letter_spacing="1.6")
-    b += text(27,110,"Campus Jobs 2027",39,p['ink'],700,letter_spacing="-1")
-    b += text(29,145,"Find an opportunity. Follow it through.",21,p['muted'])
-    b += text(29,183,"FILTER  →  VERIFY  →  TRACK",13,p['amber'],700,letter_spacing="1.3")
-    # A conceptual workflow, not a product screenshot.
-    for i,(label,color,mark) in enumerate([("DISCOVER",p['muted'],"01"),("VERIFY",p['accent'],"02"),("TRACK",p['amber'],"03")]):
-        x=528+i*143
-        b += rect(x,60,128,91,10,p['panel'],p['line'])
-        b += circle(x+24,84,10,p['bg'])
-        b += text(x+17,88,mark,10,color,600)
-        b += line(x+17,108,x+109,108,p['line'],3)
-        b += line(x+17,122,x+82,122,p['line'],3)
-        b += text(x+64,177,label,12,color,600,text_anchor="middle",letter_spacing="1")
-        b += rect(x+97,74,15,15,4,p['bg'],color)
-        if i>0: b+=f'<path d="M{x+100} 81 l3 3 6-7" fill="none" stroke="{color}" stroke-width="1.5"/>'
-    return wrap(214,"Campus Jobs 2027 — A complete job-search workspace", "Conceptual workflow: discover opportunities, verify sources and track applications.",b,p)
-
-for mode,palette in PALETTES.items():
-    for name,render in [("hero",hero),("cairn",cairn),("campus",campus)]:
-        (ASSETS/f"{name}-{mode}.svg").write_text(render(palette)+"\n",encoding="utf-8")
-print("Generated 6 SVG assets.")
+for theme,palette in THEMES.items():
+    (ASSETS/f'pixel-cat-{theme}.svg').write_text(draw(palette)+'\n')
+print('Generated two 96 × 96 pixel cats; displayed at 76 × 76.')
