@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="88" viewBox="0 0 360 88" role="img" aria-labelledby="title desc">
+<title id="title">Codex-Manager — 给模型请求安排个好管家。 账号管理 · 请求路由</title>
+<desc id="desc">打开项目</desc>
+<rect x=".5" y=".5" width="359" height="81" rx="9" fill="#161e22" stroke="#34423e"/>
+<path d="M1 23V10a9 9 0 0 1 9-9h16" fill="none" stroke="#8ed6b5" stroke-width="2"/>
+<rect x="13" y="17" width="40" height="44" rx="8" fill="#253a31"/>
+<g transform="translate(20 26)" fill="none" stroke="#8ed6b5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="23" height="20" rx="3"/><path d="m7 9 4 4-4 4m8 0h5"/></g>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<text x="65" y="25" font-size="15.5" font-weight="650" fill="#e4eee7">Codex-Manager</text>
+<text x="339" y="24" text-anchor="end" font-size="10" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" letter-spacing=".5" fill="#dfc17e">TOOLS</text>
+<text x="65" y="46" font-size="13" fill="#bacbc2">给模型请求安排个好管家。</text>
+<text x="65" y="66" font-size="11" fill="#93a99d">账号管理 · 请求路由</text>
+</g>
+<path d="M331 63h8m-3-3 3 3-3 3" fill="none" stroke="#8ed6b5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
