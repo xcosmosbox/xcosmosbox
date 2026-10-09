@@ -1,4 +1,4 @@
-<img align="right" width="96" height="96" src="assets/sancheck-pixel.png" alt="A pixel investigator adapted from my avatar: tall hat, golden hair, tiny cloak">
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/quantum-pier-still.png"><img align="right" width="360" height="101" src="assets/quantum-pier.gif" alt="A pixel investigator meets a quantum bug in a neon fishing village: debug, then tea."></picture>
 
 ### >_ San_Check’s save point
 
@@ -16,7 +16,7 @@ Building Agents, connecting knowledge, occasionally duelling bugs.<br>
   <a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/party-en-dark.svg"><img src="assets/party-en-light.svg" width="360" height="88" alt="Find a new party member — Swap ideas · Leave a little note"></picture></a>
 </p>
 
-Code at your own pace. Make a friend along the way. [Drop by](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml) — peace & love ✌️
+Code at your own pace. Make a friend along the way. [Drop by](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml) — peace & love ✌️ · tea first 🍵
 
 <details>
 <summary>🎲 Spot Hidden: is that a note on the back of this README?</summary>
@@ -70,11 +70,25 @@ Loot: **hot tea × 1 · new party member × 1**. The code can be saved tomorrow.
 
 </details>
 
-<sub>The name is a nod to Call of Cthulhu: Sanity Check + 1D100. This is a tiny choose-your-path adventure. For an actual roll, bring dice—or borrow this one.</sub>
+A cybernetic die is taped to the back of the note. The terminal whispers:
+
+> **“Roll it, investigator. Let’s see whether you find the bug—or the bug finds you.”**
 
 ```python
 from random import randint
-print(f"SAN CHECK · 1D100 = {randint(1, 100):02d}")
+
+san, d100 = 60, randint(1, 100)
+print(f"🎲 SAN {san} · 1D100 = {d100:02d}")
+if d100 == 1:
+    print("Critical success. The Old One offers to fix your code.")
+elif d100 == 100:
+    print("Fumble. git blame points to your previous life.")
+elif d100 <= san:
+    print("Check passed. Even the Old One says: tea first 🍵")
+else:
+    print(f"SAN -{randint(1, 6)}. Your name echoes from the stack.")
 ```
+
+<sub>Connection closed. One more window lights up across the water.</sub>
 
 </details>
