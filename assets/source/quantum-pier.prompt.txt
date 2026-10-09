@@ -1,22 +1,44 @@
-Generated with the built-in imagegen tool, using assets/sancheck-pixel.png as the identity reference.
-The eight complete generated frames are packaged by scripts/build_adventure.sh.
+Generated with the built-in imagegen tool. All artwork and character poses are imagegen-authored; the shell script only packages the atlas into GIF frames.
+
+INITIAL STORY BRIEF
 
 Use case: illustration-story / identity-preserve.
-Asset type: a production sprite sheet of EIGHT complete animation frames, to be sliced and encoded into one tiny horizontal pixel-art GIF for a GitHub profile.
-Reference image: the attached pixel investigator. Preserve this exact character's recognizable identity: absurdly tall navy hat with gold round emblem and studs, orange-gold hair, huge black/yellow eyes, tiny smug mouth, dark cloak, gold clasp. Do not redesign into a cat or realistic human.
+Asset type: an animated GitHub profile banner, authored as one precisely tiled animation atlas for later GIF assembly.
+Edit the supplied pixel harbor scene into a NEW wider, richer short comedy, preserving the protagonist identity and visual world.
+Input 1 is the protagonist identity reference: cute chibi investigator, golden/blond side tufts, extremely tall charcoal top hat with circular gold ornament, dark cloak and gold clasp. Input 2 is the harbor world/style reference, not a frame to simply stretch.
 
-CANVAS AND GRID: exactly 1536 x 864 pixels, an edge-to-edge 2-column by 4-row grid. Each of the 8 frames is exactly 768 x 216 pixels (a VERY WIDE SHORT horizontal strip). Reading order left to right, then top to bottom. ZERO gutters, ZERO panel borders, ZERO labels, ZERO margins. Each cell must be its own entire 768x216 frame. Do not draw a comic page with variable panel sizes. The sheet is a technical animation atlas.
+OUTPUT: exactly 2048 x 2048 pixels, a strict 2-column by 8-row contact sheet of SIXTEEN equal edge-to-edge panels. Each panel is 1024 x 256, precisely 4:1 panoramic. No gutters, no borders, no panel labels or numbers, no margin. Panels are successive animation frames read left to right, then top to bottom. Keep ALL scene elements inside each panel. This is production animation artwork, not a UI mockup.
+Style: finely crafted 16-bit pixel game cinematic, crisp coherent pixel clusters, dark midnight indigo sea, jade/cyan magic, warm amber lights. Cozy eldritch mystery and playful anime expression, not horror gore. Beautiful restrained scene, readable at a displayed width of 800 px. No blurry gradients, no photographic detail, no huge text, no watermarks.
+LOCK CAMERA AND BACKGROUND across all sixteen panels: same side-view fishing village pier, half-timbered tea house and hanging lantern on the far left, long wooden dock across bottom, calm water and fishing boats in middle distance, misty hills and a small cyan lighthouse on far right. Identical camera scale and horizon. The protagonist occupies the left-middle foreground with room to move slightly; anomaly and creature occupy the right-middle. Enrich the WIDE composition with depth, rope coils, tea kettle, small fireflies and water reflections, without making it crowded. Protagonist hat visible fully with headroom, body around 65% of panel height. Do NOT change proportions, outfit or hair from frame to frame.
+SIXTEEN consecutive poses tell this wordless story:
+1: Quiet harbor arrival. Investigator steps onto dock holding a little cyan terminal, one tiny glowing bug hovers above the water.
+2: Investigator takes a second step; bug flickers mischievously, lantern sways subtly.
+3: Investigator stops, leans toward the bug with a magnifying glass; little ripple circles grow in water.
+4: A small golden polyhedral die is tossed upward; investigator watches it, terminal floats beside them.
+5: Die is in the air with a short sparkling arc; an ominous but cute enormous single eye opens beneath the water.
+6: Die lands on pier; three mint tentacles rise and comically poke the translucent terminal.
+7: The hooded investigator recoils one step, their very tall hat tilts, tiny violet error-bugs escape the terminal.
+8: Investigator regains composure and types rapidly, teal code-like rectangular glyphs fly toward the tentacles.
+9: Tentacles stubbornly hold the terminal upside-down, investigator pauses, unimpressed face; the kettle on dock begins steaming.
+10: Investigator puts the terminal down and offers a small warm golden teacup to the enormous creature. Gentle comedy, no fighting.
+11: Creature starts shrinking, curious eye and tentacles cluster closer to the offered tea; magical cyan sparkle.
+12: Creature is now a small adorable mint-green one-eyed tentacle friend on the right side of dock; it taps the terminal with one tentacle, purple bugs turn into mint fireflies.
+13: Investigator and small creature smile; terminal now shows a single clear CHECKMARK icon, restored village lights glow warm.
+14: Investigator and creature lift tiny tea cups toward each other, cozy friendly cheers; lighthouse shines softly.
+15: Both sip tea; in the far background a vast shadowy ancient eye peeks above the sea holding its OWN tiny tea cup, a subtle funny second-look detail.
+16: Friend gently slips toward the water while investigator waves; original little bug returns quietly near the lighthouse, ready for another encounter. Main background unchanged, a calm ending that loops to arrival.
 
-SCENE: side-view retro pixel adventure on a neon fishing-village pier at night, mixing cozy COC eldritch mystery with a tiny cyberpunk terminal. Deep navy water, two or three distant sloped-roof fishing huts and a small cyan lighthouse, restrained magenta/cyan neon reflections, chunky square-pixel stars. Wooden pier in the foreground. One investigator at approximately x=215 within EVERY frame, facing slightly right. One cute mint-green quantum eldritch bug/octopus at approximately x=535, with 3-4 tentacles, a large glowing eye, little electronic glitch fragments. The investigator and creature must be clearly readable at 360x101 display pixels. Character fills about 70% of frame height including tall hat, entirely inside frame.
+The artwork itself must supply every distinct character pose and scene beat. No repeated identical panels and no collage of unrelated scenes. Pixel-art animation consistency is more important than adding extra detail.
 
-ANIMATION: locked camera, identical background and pier geometry in ALL EIGHT FRAMES; do not move buildings or horizon. Only local character/tentacle/beam/steam action changes. 
-1. Investigator studies a little cyan terminal; quantum bug peeks over the water with curious open eye.
-2. Bug rises a little, two tentacles lifted; investigator raises terminal like a spellbook.
-3. Investigator emits one short mint pixel debugging bolt toward the bug; cloak tilts a few pixels.
-4. Bolt reaches the bug as a tiny cyan/magenta pixel burst, comical and harmless.
-5. Bug becomes calm and friendly, eye soft; investigator lowers terminal.
-6. Investigator offers a tiny steaming golden tea cup toward the bug.
-7. Bug lifts its own tiny cup with a tentacle, both pause for tea; two little steam pixels.
-8. Investigator lowers cup toward terminal and bug sinks back close to starting pose, preparing seamless return to frame 1.
+FINAL COMPOSITION CORRECTION
 
-STYLE: authentic polished 16-bit pixel art, crisp stepped pixel edges, restrained limited palette, no gradients or painted shading, no antialiasing, small readable shapes rather than noisy detail. Cute, relaxed, geeky, slightly mysterious; not horror-gore. Background much darker than the character, cyan bug and warm-gold hero contrast cleanly. Do not include lettering, speech balloons, readable code, captions, UI bars, borders, watermarks, logos. Every frame must retain the reference character's tall hat, gold decoration and face.
+Use case: precise-object-edit, animation atlas layout correction.
+This reference is a FOURTEEN-FRAME pixel-art animation atlas with TWO columns and SEVEN rows. Keep all 14 story poses, the same cute blond top-hat investigator, same green one-eyed ancient creature, the same chronological story, and the same beautiful pixel-art harbor. Do not add or remove panels.
+CRITICAL CHANGE: the current panels are far too thin (about 7:1). REDRAW/REFRAME each scene to a true 4:1 panoramic banner, NOT stretched. Final whole canvas must be ALMOST SQUARE, exact requested size 1920 x 1680 pixels (8:7 aspect). Strict 2 x 7 grid, each frame 960 x 240, no gutters. The reference's overall 2:1 shape is wrong; do NOT preserve it.
+Add useful vertical scene depth: full tall top hat with visible sky above, clearly readable character bodies and arms, more foreground wood planks and water depth. Preserve left tea-house lantern and right lighthouse. Enlarge/recompose characters naturally for the 4:1 camera, about 70% of frame height, centered in the middle two-thirds. All fourteen frames must share a locked camera, identical background geography and horizon, consistent figure scale.
+Frames in row-major order: 1 arrive, 2 follow glowing bug, 3 magnifying-glass investigation, 4 toss golden die, 5 giant eye awakens, 6 tentacles grab terminal, 7 purple error-bugs and startled investigator, 8 typing code magic, 9 offer tea and ancient creature becoming small, 10 friendly bug-fixing, 11 terminal checkmark and smile, 12 tea cheers, 13 drink tea while distant giant eye has its own tiny cup, 14 wave goodbye as small creature splashes back into sea.
+Only improve proportions/layout and animation consistency. Keep warm amber/cyan/indigo palette, clean crisp pixel clusters, playful cozy mood. No panel captions, borders, text, watermark or UI chrome. The final output is one 1920 x 1680 image, not a strip.
+
+DELIVERED ATLAS
+
+1340 x 1174 pixels; two columns, seven rows, fourteen chronological story poses. Frame boundaries and playback timings are recorded in scripts/build_adventure.sh.
