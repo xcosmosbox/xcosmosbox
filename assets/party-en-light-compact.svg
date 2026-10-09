@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="160" viewBox="0 0 360 160" role="img" aria-labelledby="title">
-<title id="title">Say hello — Swap ideas</title>
+<title id="title">Join the party — Email · WeChat</title>
 <rect x=".5" y=".5" width="359" height="151" rx="12" fill="#fafbf9" stroke="#dce3df"/>
 <path d="M1 26V13A12 12 0 0 1 13 1h22" fill="none" stroke="#21826a" stroke-width="3"/>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
-<text x="22" y="55" font-size="29" font-weight="650" fill="#283633">Say hello</text>
-<text x="22" y="102" font-size="23" fill="#52645e">Swap ideas</text>
+<text x="22" y="55" font-size="29" font-weight="650" fill="#283633">Join the party</text>
+<text x="22" y="102" font-size="23" fill="#52645e">Email · WeChat</text>
 </g>
 <path d="M319 130h17m-6-6 6 6-6 6" fill="none" stroke="#21826a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

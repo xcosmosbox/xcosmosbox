@@ -1,0 +1,25 @@
+Built-in imagegen artwork prompt
+
+Use case: stylized-concept.
+Asset type: a compact collectible investigator contact credential for a GitHub profile, matching a cozy pixel-art eldritch fishing-village world.
+Primary request: create the ART FRAME of a "调查员联络证" (investigator contact pass). A real scannable WeChat QR code will be mechanically inserted later; DO NOT generate any QR pixels, dots, finder squares or fake barcode.
+
+Composition: a single isolated, front-facing, perfectly flat rectangular artifact, portrait 4:5 aspect, about 1200 x 1500. Transparent outside its softly chamfered outer silhouette. NO perspective, NO desk or scenic background, NO hand holding it. The artifact almost fills the canvas with a small transparent margin.
+CRITICAL functional inset: one huge, unobstructed PURE WHITE SQUARE in the middle, about 76% of the artifact width, with axis-aligned straight sides. Keep this entire square completely empty, uniform #FFFFFF and free of texture, grid, stains, seals, engraving, shadows, glare, text and illustrations. This is a precise QR insertion surface, not artwork. A narrow clean white inner margin around it. The white area should be the dominant central feature; do not make a tiny QR slot.
+
+Art direction: premium 16-bit pixel game inventory item. A warm ivory field-credential plate in a thin aged brass frame, charcoal/navy corners, mint-jade luminous circuit-runes etched only into the OUTER frame. Call of Cthulhu tabletop investigation meets gentle cyberpunk. A little mystery, friendly rather than grim. Crisp deliberate pixel clusters, restrained details, no blurry photoreal textures. Modest engraving and aged paper only outside the white square. A tiny gold top-hat emblem references the owner's investigator mascot; a small d100 die seal and a teacup icon appear on the bottom band, with enough breathing room.
+
+Typography must be crisp and limited to these exact short strings OUTSIDE the white square:
+Top band, main Chinese title: "调查员联络证"
+Smaller line beneath title: "San_Check"
+Bottom band: "微信接头 · 饮茶先啦"
+One tiny stat badge near bottom: "SAN +1"
+Keep the text subordinate to the QR window, aligned and easy to read at a displayed artifact width of 360 pixels.
+
+No extra words, no wax seal overlapping the white inset, no invented logo, no extra characters, no QR code. Preserve the perfectly flat white square for lossless placement of the user's REAL code.
+
+QR assembly
+
+The artwork is a decorative frame only. scripts/build_contact.sh places the original 890 x 882 QR image losslessly at +257+472 on the 1403 x 1753 finished pass. The QR itself is never generated, recolored, retouched or warped. Keep the original quiet zone and opaque white backing.
+
+Validation: the inserted QR pixel region is identical to the supplied source. ZXing-C++ decoded the same payload at native width and 480, 360, 320 and 280 px display widths, over both light and dark backdrops.

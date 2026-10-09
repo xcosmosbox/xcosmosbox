@@ -10,10 +10,29 @@ Building Agents, connecting knowledge, occasionally duelling bugs.<br>
 <p>
 <a href="https://github.com/redai-studio/Relax"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/relax-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/relax-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/relax-en-dark.svg"><img src="assets/relax-en-light.svg" width="49%" alt="Relax — Reinforcement learning · Training engine"></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/HKUDS/nanobot"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/nanobot-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/nanobot-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/nanobot-en-dark.svg"><img src="assets/nanobot-en-light.svg" width="49%" alt="nanobot — Tool use · Long-term memory"></picture></a><br>
 <a href="https://github.com/qxcnm/Codex-Manager"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/codex-manager-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/codex-manager-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/codex-manager-en-dark.svg"><img src="assets/codex-manager-en-light.svg" width="49%" alt="Codex-Manager — Account management · Request routing"></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/Ontos-AI/knowhere"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/knowhere-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/knowhere-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/knowhere-en-dark.svg"><img src="assets/knowhere-en-light.svg" width="49%" alt="Knowhere — Document parsing · Knowledge extraction"></picture></a><br>
-<a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/cairn-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/cairn-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/cairn-en-dark.svg"><img src="assets/cairn-en-light.svg" width="49%" alt="Cairn — Graph retrieval · Versioned knowledge"></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/party-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/party-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/party-en-dark.svg"><img src="assets/party-en-light.svg" width="49%" alt="Find a new party member — Swap ideas · Leave a little note"></picture></a>
+<a href="https://github.com/xcosmosbox/Cairn"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/cairn-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/cairn-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/cairn-en-dark.svg"><img src="assets/cairn-en-light.svg" width="49%" alt="Cairn — Graph retrieval · Versioned knowledge"></picture></a><picture><img src="assets/card-gap.svg" width="2%" height="1" alt=""></picture><a href="#tea-room"><picture><source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="assets/party-en-dark-compact.svg"><source media="(max-width: 767px)" srcset="assets/party-en-light-compact.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/party-en-dark.svg"><img src="assets/party-en-light.svg" width="49%" alt="Invite an investigator — Email · WeChat"></picture></a>
 </p>
 
 Code at your own pace. Make a friend along the way. [Drop by](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml) — peace & love ✌️ · tea first 🍵
+
+<details>
+<summary>🍵 Meet at the teahouse · Fellow investigators welcome</summary>
+<a name="tea-room"></a>
+
+Take a seat, investigator. Bring a clue, a strange idea, or just yourself.
+
+📮 **Email** · [Send a sealed letter ↗](mailto:2162381070@qq.com)
+
+<details>
+<summary>💬 WeChat · Reveal the investigator pass</summary>
+
+<p><a href="assets/investigator-contact.png"><img src="assets/investigator-contact.png" width="360" alt="San_Check’s investigator contact pass: scan the QR code to connect on WeChat"></a></p>
+
+Scan the pass to invite San_Check to your party.
+
+</details>
+
+</details>
 
 <details>
 <summary>🎲 Spot Hidden: is that a note on the back of this README?</summary>
