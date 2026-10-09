@@ -1,48 +1,62 @@
 #!/usr/bin/env python3
-"""Draw the profile's tiny pixel cat. Standard library only; no remote assets."""
+"""Build the compact project-launcher cards. Python standard library only."""
+from html import escape
 from pathlib import Path
 
 ASSETS = Path(__file__).resolve().parents[1] / "assets"
 ASSETS.mkdir(exist_ok=True)
 
+# All projects use the same dimensions and typography. No live counters or services.
+CARDS = [
+    ("relax", "Relax", "RL", "train", "让大模型学会更好的下一步。", "强化学习 · 训练引擎", "A training ground for better next moves.", "Reinforcement learning · Training engine"),
+    ("nanobot", "nanobot", "AGENT", "bot", "轻装上阵的 Agent 小伙伴。", "工具调用 · 长期记忆", "A lightweight Agent companion.", "Tool use · Long-term memory"),
+    ("codex-manager", "Codex-Manager", "TOOLS", "terminal", "给模型请求安排个好管家。", "账号管理 · 请求路由", "A little order for your model requests.", "Account management · Request routing"),
+    ("knowhere", "Knowhere", "KNOWLEDGE", "book", "把文档拆开，给知识找个家。", "文档解析 · 知识提取", "Give the knowledge in your docs a home.", "Document parsing · Knowledge extraction"),
+    ("cairn", "Cairn", "GRAPHRAG", "graph", "给 Agent 一张知识地图。", "图谱检索 · 版本化知识", "A knowledge map for your Agent.", "Graph retrieval · Versioned knowledge"),
+    ("party", "邀请一位新队友", "CO-OP", "chat", "带个脑洞来，或者就打个招呼。", "聊个想法 · 留个脚印", "Bring an idea, or simply say hello.", "Swap ideas · Leave a little note"),
+]
+
 THEMES = {
-    "light": {"fur":"#b4a2ef", "shade":"#8b78ca", "edge":"#393456", "ear":"#f3bddb", "screen":"#e3f5f0", "mint":"#167c6b", "shine":"#efe7ff"},
-    "dark": {"fur":"#c1b2f5", "shade":"#9783d8", "edge":"#302c47", "ear":"#fac9df", "screen":"#243c3a", "mint":"#91e4ce", "shine":"#f2ebff"},
+    "light": dict(bg="#fafbf9", border="#dce3df", ink="#283633", sub="#52645e", dim="#67776f", accent="#21826a", tile="#eaf2ed", gold="#9a711e"),
+    "dark": dict(bg="#161e22", border="#34423e", ink="#e4eee7", sub="#bacbc2", dim="#93a99d", accent="#8ed6b5", tile="#253a31", gold="#dfc17e"),
 }
 
-def rect(x,y,w,h,c):
-    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c}"/>'
+ICONS = {
+    "train": '<path d="M2 21h22M4 16l5-5 4 2 8-10M16 3h5v5"/>',
+    "bot": '<rect x="3" y="7" width="20" height="15" rx="4"/><path d="M13 3v4M0 13h3m20 0h3M9 17h8"/><path d="M8 12h2m6 0h2"/>',
+    "terminal": '<rect x="2" y="3" width="23" height="20" rx="3"/><path d="m7 9 4 4-4 4m8 0h5"/>',
+    "book": '<path d="M13 6C8 3 3 4 2 5v17c4-2 8-1 11 1 3-2 7-3 11-1V5c-3-2-7-1-11 1v17M6 9l4 1m-4 4 4 1m7-5 4-1m-4 6 4-1"/>',
+    "graph": '<path d="m7 8 11-3M7 8l-2 13m2-13 13 11M5 21l15-2M18 5l2 14"/><circle cx="7" cy="8" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="5" cy="21" r="3"/><circle cx="20" cy="19" r="3"/>',
+    "chat": '<path d="M4 4h20v14H13l-7 5v-5H4zM8 9h12M8 13h8"/>',
+}
 
-def draw(p):
-    b = ''
-    # Pixel ears, head, shoulders and a curled tail.
-    for a in [(25,15,12,22),(58,15,12,22),(21,29,53,29),(25,54,46,24),(67,62,12,8),(75,53,7,14)]:
-        b += rect(*a,p['edge'])
-    for a in [(29,19,4,13),(62,19,4,13),(25,33,45,21),(29,54,38,20),(70,63,9,4),(78,54,4,10)]:
-        b += rect(*a,p['fur'])
-    b += rect(29,27,4,7,p['ear']) + rect(62,27,4,7,p['ear'])
-    b += rect(25,50,45,4,p['shade']) + rect(34,57,24,13,p['shine'])
-    b += '<g class="eyes">' + rect(33,38,5,6,p['edge']) + rect(57,38,5,6,p['edge']) + '</g>'
-    b += rect(27,44,6,3,p['ear']) + rect(63,44,6,3,p['ear'])
-    b += '<path d="M44 45h3v3h4v-3h3" fill="none" stroke="'+p['edge']+'" stroke-width="2"/>'
-    # The terminal is an illustration, not a simulated status panel.
-    b += rect(18,62,52,24,p['edge']) + rect(22,66,44,15,p['screen'])
-    b += '<path d="m29 70 4 3-4 3" fill="none" stroke="'+p['mint']+'" stroke-width="2"/>'
-    b += rect(38,75,8,2,p['mint']) + rect(14,84,60,4,p['shade'])
-    b += '<g class="spark" fill="'+p['mint']+'"><path d="M80 23h3v4h4v3h-4v4h-3v-4h-4v-3h4z"/></g>'
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
-<title id="title">Pixel cat at a terminal</title>
-<desc id="desc">A small lavender cat with a mint terminal, blinking gently.</desc>
-<style>
-.eyes {{ transform-origin: 48px 41px; animation: blink 7s steps(1,end) infinite; }}
-.spark {{ animation: sparkle 5s ease-in-out infinite; }}
-@keyframes blink {{ 0%,94%,98%,100% {{ transform:scaleY(1); }} 95%,97% {{ transform:scaleY(.2); }} }}
-@keyframes sparkle {{ 0%,100% {{ opacity:.5; }} 50% {{ opacity:1; }} }}
-@media (prefers-reduced-motion:reduce) {{ .eyes,.spark {{ animation:none; }} }}
-</style>
-{b}
+
+def build(card, theme, lang):
+    slug, name, label, icon, zh, zh_sub, en, en_sub = card
+    p = THEMES[theme]
+    if lang == "en" and slug == "party":
+        name = "Find a new party member"
+    desc, sub = (zh, zh_sub) if lang == "zh" else (en, en_sub)
+    title = f"{name} — {desc} {sub}"
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="360" height="88" viewBox="0 0 360 88" role="img" aria-labelledby="title desc">
+<title id="title">{escape(title)}</title>
+<desc id="desc">{escape('打开项目' if slug != 'party' else '打开留言入口')}</desc>
+<rect x=".5" y=".5" width="359" height="81" rx="9" fill="{p['bg']}" stroke="{p['border']}"/>
+<path d="M1 23V10a9 9 0 0 1 9-9h16" fill="none" stroke="{p['accent']}" stroke-width="2"/>
+<rect x="13" y="17" width="40" height="44" rx="8" fill="{p['tile']}"/>
+<g transform="translate(20 26)" fill="none" stroke="{p['accent']}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<text x="65" y="25" font-size="15.5" font-weight="650" fill="{p['ink']}">{escape(name)}</text>
+<text x="339" y="24" text-anchor="end" font-size="10" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" letter-spacing=".5" fill="{p['gold']}">{label}</text>
+<text x="65" y="46" font-size="13" fill="{p['sub']}">{escape(desc)}</text>
+<text x="65" y="66" font-size="11" fill="{p['dim']}">{escape(sub)}</text>
+</g>
+<path d="M331 63h8m-3-3 3 3-3 3" fill="none" stroke="{p['accent']}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>'''
 
-for theme,palette in THEMES.items():
-    (ASSETS/f'pixel-cat-{theme}.svg').write_text(draw(palette)+'\n')
-print('Generated two 96 × 96 pixel cats; displayed at 76 × 76.')
+
+for card in CARDS:
+    for theme in THEMES:
+        for lang in ("zh", "en"):
+            (ASSETS / f"{card[0]}-{lang}-{theme}.svg").write_text(build(card, theme, lang) + "\n", encoding="utf-8")
+print("Built 24 compact cards: 6 destinations × 2 languages × 2 themes.")
