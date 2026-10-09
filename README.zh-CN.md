@@ -1,4 +1,4 @@
-<img align="right" width="96" height="96" src="assets/sancheck-pixel.png" alt="从原头像走出来的像素调查员：高帽、金发、小披风">
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/quantum-pier-still.png"><img align="right" width="360" height="101" src="assets/quantum-pier.gif" alt="像素调查员在霓虹渔村遇见量子古神：先 Debug，再一起饮茶。"></picture>
 
 ### >_ San_Check 的存档点
 
@@ -16,7 +16,7 @@
   <a href="https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/party-zh-dark.svg"><img src="assets/party-zh-light.svg" width="360" height="88" alt="邀请一位新队友 — 聊个想法 · 留个脚印"></picture></a>
 </p>
 
-代码慢慢写，朋友慢慢交。[来串个门](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml)，peace & love ✌️
+代码慢慢写，朋友慢慢交。[来串个门](https://github.com/xcosmosbox/xcosmosbox/issues/new?template=hello.yml)，peace & love ✌️ · 饮茶先啦 🍵
 
 <details>
 <summary>🎲 侦查检定：README 背面好像有张纸条……</summary>
@@ -70,11 +70,25 @@ quest.pause(reason="茶要趁热")
 
 </details>
 
-<sub>名字里的梗是 COC 的 Sanity Check + 1D100。这里是一个选路线的小模组；真实检定请自备骰子，也可以借下面这颗。</sub>
+纸条背面还粘着一枚赛博骰子。终端低声说：
+
+> **「调查员，把它掷出去。看看是你先找到 bug，还是 bug 先找到你。」**
 
 ```python
 from random import randint
-print(f"SAN CHECK · 1D100 = {randint(1, 100):02d}")
+
+san, d100 = 60, randint(1, 100)
+print(f"🎲 SAN {san} · 1D100 = {d100:02d}")
+if d100 == 1:
+    print("大成功。古神看了眼你的代码，决定帮你修。")
+elif d100 == 100:
+    print("大失败。git blame 指向了你的前世。")
+elif d100 <= san:
+    print("检定成功。古神也说：饮茶先啦 🍵")
+else:
+    print(f"SAN -{randint(1, 6)}。你在栈底听见了自己的名字。")
 ```
+
+<sub>连接已断开。海面上，多亮起了一扇窗。</sub>
 
 </details>

@@ -1,0 +1,22 @@
+Generated with the built-in imagegen tool, using assets/sancheck-pixel.png as the identity reference.
+The eight complete generated frames are packaged by scripts/build_adventure.sh.
+
+Use case: illustration-story / identity-preserve.
+Asset type: a production sprite sheet of EIGHT complete animation frames, to be sliced and encoded into one tiny horizontal pixel-art GIF for a GitHub profile.
+Reference image: the attached pixel investigator. Preserve this exact character's recognizable identity: absurdly tall navy hat with gold round emblem and studs, orange-gold hair, huge black/yellow eyes, tiny smug mouth, dark cloak, gold clasp. Do not redesign into a cat or realistic human.
+
+CANVAS AND GRID: exactly 1536 x 864 pixels, an edge-to-edge 2-column by 4-row grid. Each of the 8 frames is exactly 768 x 216 pixels (a VERY WIDE SHORT horizontal strip). Reading order left to right, then top to bottom. ZERO gutters, ZERO panel borders, ZERO labels, ZERO margins. Each cell must be its own entire 768x216 frame. Do not draw a comic page with variable panel sizes. The sheet is a technical animation atlas.
+
+SCENE: side-view retro pixel adventure on a neon fishing-village pier at night, mixing cozy COC eldritch mystery with a tiny cyberpunk terminal. Deep navy water, two or three distant sloped-roof fishing huts and a small cyan lighthouse, restrained magenta/cyan neon reflections, chunky square-pixel stars. Wooden pier in the foreground. One investigator at approximately x=215 within EVERY frame, facing slightly right. One cute mint-green quantum eldritch bug/octopus at approximately x=535, with 3-4 tentacles, a large glowing eye, little electronic glitch fragments. The investigator and creature must be clearly readable at 360x101 display pixels. Character fills about 70% of frame height including tall hat, entirely inside frame.
+
+ANIMATION: locked camera, identical background and pier geometry in ALL EIGHT FRAMES; do not move buildings or horizon. Only local character/tentacle/beam/steam action changes. 
+1. Investigator studies a little cyan terminal; quantum bug peeks over the water with curious open eye.
+2. Bug rises a little, two tentacles lifted; investigator raises terminal like a spellbook.
+3. Investigator emits one short mint pixel debugging bolt toward the bug; cloak tilts a few pixels.
+4. Bolt reaches the bug as a tiny cyan/magenta pixel burst, comical and harmless.
+5. Bug becomes calm and friendly, eye soft; investigator lowers terminal.
+6. Investigator offers a tiny steaming golden tea cup toward the bug.
+7. Bug lifts its own tiny cup with a tentacle, both pause for tea; two little steam pixels.
+8. Investigator lowers cup toward terminal and bug sinks back close to starting pose, preparing seamless return to frame 1.
+
+STYLE: authentic polished 16-bit pixel art, crisp stepped pixel edges, restrained limited palette, no gradients or painted shading, no antialiasing, small readable shapes rather than noisy detail. Cute, relaxed, geeky, slightly mysterious; not horror-gore. Background much darker than the character, cyan bug and warm-gold hero contrast cleanly. Do not include lettering, speech balloons, readable code, captions, UI bars, borders, watermarks, logos. Every frame must retain the reference character's tall hat, gold decoration and face.
