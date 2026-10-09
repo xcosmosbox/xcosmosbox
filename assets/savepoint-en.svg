@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="101" viewBox="0 0 360 101" role="img" aria-labelledby="title desc">
+<title id="title">San_Check’s save point</title><desc id="desc">Agents, knowledge, and the occasional bug. GraphRAG · Agent · RL. Pick a quest. Have a look around.</desc>
+<rect width="360" height="101" fill="#0b1730"/>
+<path d="M0 0h360" stroke="#234360"/>
+<rect x="16" y="18" width="3" height="17" fill="#72d9cc"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<text x="28" y="32" font-size="19" font-weight="650" fill="#ecf2fa">San_Check’s save point</text>
+<text x="17" y="54" font-size="13" fill="#b7cbdc">Agents, knowledge, and the occasional bug.</text>
+<text x="17" y="75" font-size="11" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" fill="#efc474">GraphRAG  /  Agent  /  RL</text>
+<text x="17" y="93" font-size="10" fill="#72d9cc">$ ls ~/playground</text>
+<text x="128" y="93" font-size="10" fill="#94b0c5">Pick a quest. Have a look around.</text>
+</g>
+</svg>

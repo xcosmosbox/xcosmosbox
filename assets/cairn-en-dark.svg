@@ -1,15 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="88" viewBox="0 0 360 88" role="img" aria-labelledby="title desc">
 <title id="title">Cairn — A knowledge map for your Agent. Graph retrieval · Versioned knowledge</title>
 <desc id="desc">打开项目</desc>
-<rect x=".5" y=".5" width="359" height="81" rx="9" fill="#161e22" stroke="#34423e"/>
-<path d="M1 23V10a9 9 0 0 1 9-9h16" fill="none" stroke="#8ed6b5" stroke-width="2"/>
-<rect x="13" y="17" width="40" height="44" rx="8" fill="#253a31"/>
-<g transform="translate(20 26)" fill="none" stroke="#8ed6b5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 8 11-3M7 8l-2 13m2-13 13 11M5 21l15-2M18 5l2 14"/><circle cx="7" cy="8" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="5" cy="21" r="3"/><circle cx="20" cy="19" r="3"/></g>
+<rect width="360" height="88" fill="#0b1730"/>
+<path d="M8 4h338l6 6v65l-6 6H8z" fill="#10233e" stroke="#34536f"/>
+<path d="M8 22V4h23" fill="none" stroke="#80e0d2" stroke-width="1.5"/>
+<path d="M332 81h14l6-6" fill="none" stroke="#efc474" stroke-opacity=".55"/>
+<rect x="15" y="19" width="38" height="42" rx="5" fill="#16394b"/>
+<g transform="translate(20 26)" fill="none" stroke="#80e0d2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 8 11-3M7 8l-2 13m2-13 13 11M5 21l15-2M18 5l2 14"/><circle cx="7" cy="8" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="5" cy="21" r="3"/><circle cx="20" cy="19" r="3"/></g>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
-<text x="65" y="25" font-size="15.5" font-weight="650" fill="#e4eee7">Cairn</text>
-<text x="339" y="24" text-anchor="end" font-size="10" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" letter-spacing=".5" fill="#dfc17e">GRAPHRAG</text>
-<text x="65" y="46" font-size="13" fill="#bacbc2">A knowledge map for your Agent.</text>
-<text x="65" y="66" font-size="11" fill="#93a99d">Graph retrieval · Versioned knowledge</text>
+<text x="65" y="27" font-size="15.5" font-weight="650" fill="#ecf2fa">Cairn</text>
+<text x="337" y="26" text-anchor="end" font-size="9" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" letter-spacing=".5" fill="#efc474">GRAPHRAG</text>
+<text x="65" y="48" font-size="13" fill="#b7cbdc">A knowledge map for your Agent.</text>
+<text x="65" y="68" font-size="11" fill="#94b0c5">Graph retrieval · Versioned knowledge</text>
 </g>
-<path d="M331 63h8m-3-3 3 3-3 3" fill="none" stroke="#8ed6b5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M329 65h8m-3-3 3 3-3 3" fill="none" stroke="#80e0d2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
